@@ -2,6 +2,7 @@
 #implementation of MORS code in python
 
 import winsound
+
 import time
 
 def DOTBeepSoun():
@@ -9,11 +10,13 @@ def DOTBeepSoun():
     duration = 400
     winsound.Beep(freq, duration)
     return
+    
 def DASHBeepSoun():
     freq = 800
     duration = 2500
     winsound.Beep(freq, duration)
     return
+    
 
 def LettersANDnumbers():
     def A():
