@@ -1,5 +1,6 @@
 # MORScode
-implementation of MORS code in python
+#implementation of MORS code in python
+
 import winsound
 import time
 
