@@ -1,6 +1,3 @@
-# MORScode
-#implementation of MORS code in python
-
 import winsound
 
 import time
@@ -8,32 +5,21 @@ import time
 def DOTBeepSoun():
 
     freq = 800
-    
     duration = 400
-    
     winsound.Beep(freq, duration)
-    
     return
-    
 def DASHBeepSoun():
 
     freq = 800
-    
     duration = 2500
-    
     winsound.Beep(freq, duration)
-    
     return
-    
 
 def LettersANDnumbers():
 
     def A():
-    
         DOTBeepSoun()
-        
         DASHBeepSoun()
-        
         return
 
     def B():
@@ -296,163 +282,168 @@ def LettersANDnumbers():
         DOTBeepSoun()
         return
 
+    try:
+        UserInput = input(" \nEnter text which you want to transfer --->\n ")
+    except :
+        print(" This can not be transfered to MORS code")
+        time.sleep(3)
+        LettersANDnumbers()
+    else:
+        for i in UserInput:
+            if i == "a" or i == "A":
+                print("\na/A >>>     .- ")
+                A()
 
-    UserInput = input(" \nEnter text which you want to transfer --->\n ")
-    for i in UserInput:
-        if i == "a":
-            print(" .- ")
-            A()
+            elif i == "b" or i == "B":
+                print("\nb/B >>>     -... ")
+                B()
 
-        elif i == "b":
-            print(" -... ")
-            B()
+            elif i == "c" or i == "C":
+                print("\nc/C >>>     -.-. ")
+                C()
 
-        elif i == "c":
-            print(" -.-. ")
-            C()
+            elif i == "d" or i == "D":
+                print("\nd/D >>>      -.. ")
+                D()
 
-        elif i == "d":
-            print(" -.. ")
-            D()
+            elif i == "e" or i == "E":
+                print("\ne/E >>>      . ")
+                E()
 
-        elif i == "e":
-            print(" . ")
-            E()
+            elif i == "f" or i == "F":
+                print("\nf/F >>>      ..-. ")
+                F()
 
-        elif i == "f":
-            print(" ..-. ")
-            F()
+            elif i == "g" or i == "G":
+                print("\ng/G >>>      --. ")
+                G()
 
-        elif i == "g":
-            print(" --. ")
-            G()
+            elif i == "h" or i == "H":
+                print("\nh/H >>>      .... ")
+                H()
 
-        elif i == "h":
-            print(" .... ")
-            H()
+            elif i == "i" or i == "I":
+                print("\ni/I >>>      .. ")
+                I()
 
-        elif i == "i":
-            print(" .. ")
-            I()
+            elif i == "j" or i == "J":
+                print("\nj/J >>>      .--- ")
+                J()
 
-        elif i == "j":
-            print(" .--- ")
-            J()
+            elif i == "k" or i == "K":
+                print("\nk/K >>>       -.- ")
+                K()
 
-        elif i == "k":
-            print(" -.- ")
-            K()
+            elif i == "l" or i == "L":
+                print("\nl/L >>>       .-.. ")
+                L()
 
-        elif i == "l":
-            print(" .-.. ")
-            L()
+            elif i == "m" or i == "M":
+                print("\nm/M >>>       -- ")
+                M()
 
-        elif i == "m":
-            print(" -- ")
-            M()
+            elif i == "n" or i == "N":
+                print("\nn/N >>>       -. ")
+                N()
 
-        elif i == "n":
-            print(" -. ")
-            N()
+            elif i == "o" or i == "O":
+                print("\no/O >>>       --- ")
+                O()
 
-        elif i == "o":
-            print(" --- ")
-            O()
+            elif i == "p" or i == "P":
+                print("\np/P >>>       .--. ")
+                P()
+            elif i == "q" or i == "Q":
+                print("\nq/Q >>>       --.- ")
+                Q()
 
-        elif i == "p":
-            print(" .--. ")
-            P()
-        elif i == "q":
-            print(" --.- ")
-            Q()
+            elif i == "r" or i == "R":
+                print("\nr/R >>>       .-. ")
+                R()
 
-        elif i == "r":
-            print(" .-. ")
-            R()
+            elif i == "s" or i == "S":
+                print("\ns/S >>>       ... ")
+                S()
 
-        elif i == "s":
-            print(" ... ")
-            S()
+            elif i == "t" or i == "T":
+                print("\nt/T >>>       - ")
+                T()
 
-        elif i == "t":
-            print(" - ")
-            T()
+            elif i == "u" or i == "U":
+                print("\nu/U >>>       ..- ")
+                U()
 
-        elif i == "u":
-            print(" ..- ")
-            U()
+            elif i == "v" or i == "V":
+                print("\nv/V >>>       ...- ")
+                V()
 
-        elif i == "v":
-            print(" ...- ")
-            V()
+            elif i == "w" or i == "W":
+                print("\nw/W >>>       .-- ")
+                W()
 
-        elif i == "w":
-            print(" .-- ")
-            W()
+            elif i == "x" or i == "X":
+                print("\nx/X >>>       -..- ")
+                X()
 
-        elif i == "x":
-            print(" -..- ")
-            X()
+            elif i == "y" or i == "Y":
+                print("\ny/Y >>>       -.-- ")
+                Y()
 
-        elif i == "y":
-            print(" -.-- ")
-            Y()
+            elif i == "z" or i == "Z":
+                print("\nz/Z >>>       --.. ")
+                Z()
 
-        elif i == "z":
-            print(" --.. ")
-            Z()
+            elif i == "1":
+                print("\n1 >>>       .---- ")
+                num1()
 
-        elif i == "1":
-            print(" .---- ")
-            num1()
+            elif i == "2":
+                print("\n2 >>>        ..--- ")
+                num2()
 
-        elif i == "2":
-            print(" ..--- ")
-            num2()
+            elif i == "3":
+                print("\n3 >>>        ...-- ")
+                num3()
 
-        elif i == "3":
-            print(" ...-- ")
-            num3()
+            elif i == "4":
+                print("\n4 >>>        ....- ")
+                num4()
 
-        elif i == "4":
-            print(" ....- ")
-            num4()
+            elif i == "5":
+                print("\n5 >>>        ..... ")
+                num5()
 
-        elif i == "5":
-            print(" ..... ")
-            num5()
+            elif i == "6":
+                print("\n6 >>>        -.... ")
+                num6()
 
-        elif i == "6":
-            print(" -.... ")
-            num6()
+            elif i == "7":
+                print("\n7 >>>        --... ")
+                num7()
 
-        elif i == "7":
-            print(" --... ")
-            num7()
+            elif i == "8":
+                print("\n8 >>>        ---.. ")
+                num8()
 
-        elif i == "8":
-            print(" ---.. ")
-            num8()
+            elif i == "9":
+                print("\n9 >>>        ----. ")
+                num9()
 
-        elif i == "9":
-            print(" ----. ")
-            num9()
+            elif i == "0":
+                print("\n0 >>>        ----- ")
+                num0()
 
-        elif i == "0":
-            print(" ----- ")
-            num0()
+            elif i == ".":
+                print("\n. >>>        .-.-.- ")
+                dot()
 
-        elif i == ".":
-            print(" .-.-.- ")
-            dot()
+            elif i == ",":
+                print("\n, >>>        --..-- ")
+                colon()
 
-        elif i == ",":
-            print(" --..-- ")
-            colon()
-
-        elif i == "?":
-            print(" ..--.. ")
-            questionmark()
+            elif i == "?":
+                print("\n? >>>        ..--.. ")
+                questionmark()
 
 
     time.sleep(2)
